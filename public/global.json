@@ -1,5 +1,13 @@
+
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.4/src/parser/GlobalConfigSchema.json",
-  "configsList": [],
-  "configs": {}
+  "configsList": [
+    "emotional-vs-responses"
+  ],
+  "configs": {
+    "emotional-vs-responses": {
+    "path": "emotional-vs-responses/config.json"
+    }
+      
+}
 }
