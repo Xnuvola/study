@@ -37,9 +37,7 @@
                     "prompt": "What is your age?",
                     "required": true,
                     "location": "aboveStimulus",
-                    "type": "numerical",
-                    "min": 18,
-                    "max": 100,
+                    "type": "longText",
                     "placeholder": "Enter your age"
                 },
                 {
@@ -47,13 +45,15 @@
                     "prompt": "What is your gender?",
                     "required": true,
                     "location": "aboveStimulus",
-                    "type": "radio",
+                    "type": "dropdown",
+                    "placeholder": "Please select your gender",
                     "options": [
                         "Female",
                         "Male",
                         "Other",
                         "Prefer not to say"
-                    ]},
+                    ]
+                },
                     {
                         "id": "education",
                         "prompt": "What is your highest degree or level of education you have completed?",
@@ -93,18 +93,282 @@
                     }
             ]
         },
-        "second-question-set": {
+        "first-visualization-introduction": {
+            "type": "markdown",
+            "path": "emotional-vs-responses/assets/first-visualization.introduction.md",
+            "response": []
+        },
+        "flooding-enhanced": {
+            "type": "video",
+            "path": "emotional-vs-responses/assets/flooding-enhanced.mov",
+            "forceCompletion": true,
+            "response": []
+        },
+        "first-visualization": {
             "type": "questionnaire",
             "response": [
                 {
-                    "id": "q3-satisfaction",
-                    "prompt": "Rate your satisfaction with this survey from 1 (not enjoyable) to 5 (very enjoyable).",
+                    "id": "visualization-statements",
+                    "prompt": "Look at the first visualization carefully. Answer the questions below.",
                     "required": true,
                     "location": "aboveStimulus",
-                    "type": "likert",
-                    "leftLabel": "Not Enjoyable",
-                    "rightLabel": "Very Enjoyable",
-                    "numItems": 5
+                    "type": "matrix-radio",
+                    "answerOptions": [
+                        "Strongly disagree",
+                        "Disagree",
+                        "Slightly disagree",
+                        "Neutral",
+                        "Slightly agree",
+                        "Agree",
+                        "Strongly aagree"
+                    ],
+                "questionOptions": [
+                "It is obvious for me how to read this visualization.",
+                "I can easily understand how the data is represented in this visualization.",
+                "I can easily understand this visualization.",
+                "I don't find this visualization crowded.",
+                "I don't find distracting parts in this visualization.",
+                "I can easily find specific elements in this visualization.",
+                "I can easily identify relevant information in this visualization.",
+                "I can easily retrieve information from this visualization.",
+                "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
+                "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
+            ]
+                },
+                {
+                    "id": "flooding-emotions",
+                    "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "checkbox",
+                    "options": [
+                        "Afraid",
+                        "Alert",
+                        "Upset",
+                        "Interested",
+                        "Distressed",
+                        "Scared",
+                        "Nervous"
+                    ]
+                },
+                {
+                    "id": "emotionally-affected",
+                    "prompt": "Were you emotionally affected by the visualization?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "id": "emotional-impact",
+                    "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "matrix-radio",
+                    "answerOptions": [
+                        "Very slightly or not at all",
+                        "A little",
+                        "Moderately",
+                        "Quite a bit",
+                        "Extremely"
+                    ],
+                    "questionOptions": [
+                        "I felt overwhelmed by the flooding.",
+                        "I felt anxious while watching the flooding progress.",
+                        "I felt inspired to learn more about flooding.",
+                        "I felt hopeful it would get better.",
+                        "I felt inspired to act."
+                    ]
+                }
+            ]
+        },
+        "second-visualization-introduction": {
+            "type": "markdown",
+            "path": "emotional-vs-responses/assets/second-visualization.introduction.md",
+            "response": []
+        },
+
+    "flooding-non-enhanced": {
+            "type": "video",
+            "path": "emotional-vs-responses/assets/flooding-non-enhanced.mov",
+            "forceCompletion": true,
+            "response": []
+        },
+
+        "second-visualization": {
+            "type": "questionnaire",
+            "response": [
+                {
+                    "id": "visualization-statements",
+                    "prompt": "Look at the first visualization carefully. Answer the questions below.",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "matrix-radio",
+                    "answerOptions": [
+                        "Strongly disagree",
+                        "Disagree",
+                        "Slightly disagree",
+                        "Neutral",
+                        "Slightly agree",
+                        "Agree",
+                        "Strongly aagree"
+                    ],
+                "questionOptions": [
+                "It is obvious for me how to read this visualization.",
+                "I can easily understand how the data is represented in this visualization.",
+                "I can easily understand this visualization.",
+                "I don't find this visualization crowded.",
+                "I don't find distracting parts in this visualization.",
+                "I can easily find specific elements in this visualization.",
+                "I can easily identify relevant information in this visualization.",
+                "I can easily retrieve information from this visualization.",
+                "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
+                "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
+            ]
+                },
+                {
+                    "id": "flooding-emotions",
+                    "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "checkbox",
+                    "options": [
+                        "Afraid",
+                        "Alert",
+                        "Upset",
+                        "Interested",
+                        "Distressed",
+                        "Scared",
+                        "Nervous"
+                    ]
+                },
+                {
+                    "id": "emotionally-affected",
+                    "prompt": "Were you emotionally affected by the visualization?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "id": "emotional-impact",
+                    "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "matrix-radio",
+                    "answerOptions": [
+                        "Very slightly or not at all",
+                        "A little",
+                        "Moderately",
+                        "Quite a bit",
+                        "Extremely"
+                    ],
+                    "questionOptions": [
+                        "I felt overwhelmed by the flooding.",
+                        "I felt anxious while watching the flooding progress.",
+                        "I felt inspired to learn more about flooding.",
+                        "I felt hopeful it would get better.",
+                        "I felt inspired to act."
+                    ]
+                }
+            ]
+        },
+
+        "part-three": {
+            "type": "markdown",
+            "path": "emotional-vs-responses/assets/part-three.md",
+            "response": []
+        },
+        "final-comparison": {
+            "type": "image",
+            "path": "emotional-vs-responses/assets/photo.png",
+            "style": {
+                "maxWidth": "700px",
+                "width": "100%"
+            },
+            "response": [
+                {
+                    "id": "trustworthy",
+                    "prompt": "Which visualization was more trustworthy?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "engaging",
+                    "prompt": "Which visualization was more engaging for you?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "emotionally-compelling",
+                    "prompt": "Which visualization was more emotionally compelling?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "confusing",
+                    "prompt": "Which visualization was more confusing?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "enjoyable",
+                    "prompt": "Which visualization was more enjoyable?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "easier-to-understand",
+                    "prompt": "Which visualization was easier to understand?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
+                },
+                {
+                    "id": "easier-to-read",
+                    "prompt": "Which visualization is easier to read?",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        "First visualization",
+                        "Second visualization"
+                    ]
                 }
             ]
         }
@@ -114,7 +378,30 @@
         "components": [
             "introduction",
             "demographics",
-            "second-question-set"
+
+            {
+            "order": "latinSquare",
+            "components": [
+                {
+                    "order": "fixed",
+                    "components": [
+                        "first-visualization-introduction",
+                        "flooding-enhanced",
+                        "first-visualization"
+                    ]
+                },
+                {
+                    "order": "fixed",
+                    "components": [
+                        "second-visualization-introduction",
+                        "flooding-non-enhanced",
+                        "second-visualization"
+                    ]
+                }
+            ]
+        },
+            "part-three",
+            "final-comparison"
         ]
     }
 }
