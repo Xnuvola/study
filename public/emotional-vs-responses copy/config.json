@@ -17,14 +17,19 @@
     },
     "uiConfig": {
         "contactEmail": "your@email.com",
-        "helpTextPath": "emotional-vs-responses/assets/help.md",
+        "helpTextPath": "emotional-vs-responses copy/assets/help.md",
         "logoPath": "revisitAssets/revisitLogoSquare.svg",
         "withProgressBar": true,
         "autoDownloadStudy": false,
-        "withSidebar": false
+        "withSidebar": true
     },
     "components": {
         "introduction": {
+            "type": "markdown",
+            "path": "emotional-vs-responses/assets/introduction.md",
+            "response": []
+        },
+        "topic2-introduction": {
             "type": "markdown",
             "path": "emotional-vs-responses/assets/introduction.md",
             "response": []
@@ -101,8 +106,7 @@
         "flooding-enhanced": {
             "type": "video",
             "path": "emotional-vs-responses/assets/flooding-enhanced.mov",
-            "forceCompletion": false,
-            "withTimeline": true,
+            "forceCompletion": true,
             "response": []
         },
         "first-visualization": {
@@ -195,8 +199,7 @@
     "flooding-non-enhanced": {
             "type": "video",
             "path": "emotional-vs-responses/assets/flooding-non-enhanced.mov",
-            "forceCompletion": false,
-            "withTimeline": true,
+            "forceCompletion": true,
             "response": []
         },
 
@@ -385,7 +388,6 @@
             "order": "latinSquare",
             "components": [
                 {
-                    "id": "First-Vis",
                     "order": "fixed",
                     "components": [
                         "first-visualization-introduction",
@@ -394,7 +396,6 @@
                     ]
                 },
                 {
-                    "id": " Second-Vis",
                     "order": "fixed",
                     "components": [
                         "second-visualization-introduction",
