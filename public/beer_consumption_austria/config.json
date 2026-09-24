@@ -17,7 +17,7 @@
     },
     "uiConfig": {
         "contactEmail": "your@email.com",
-        "helpTextPath": "emotional-vs-responses copy/assets/help.md",
+        "helpTextPath": "beer_consumption_austria/assets/help.md",
         "logoPath": "revisitAssets/revisitLogoSquare.svg",
         "withProgressBar": true,
         "autoDownloadStudy": false,
@@ -26,12 +26,7 @@
     "components": {
         "introduction": {
             "type": "markdown",
-            "path": "emotional-vs-responses/assets/introduction.md",
-            "response": []
-        },
-        "topic2-introduction": {
-            "type": "markdown",
-            "path": "emotional-vs-responses/assets/introduction.md",
+            "path": "beer_consumption_austria/assets/introduction.md",
             "response": []
         },
         "demographics": {
@@ -100,12 +95,12 @@
         },
         "first-visualization-introduction": {
             "type": "markdown",
-            "path": "emotional-vs-responses/assets/first-visualization.introduction.md",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/first-visualization.introduction.md",
             "response": []
         },
         "flooding-enhanced": {
             "type": "video",
-            "path": "emotional-vs-responses/assets/flooding-enhanced.mov",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/flooding-enhanced.mov",
             "forceCompletion": true,
             "response": []
         },
@@ -192,13 +187,13 @@
         },
         "second-visualization-introduction": {
             "type": "markdown",
-            "path": "emotional-vs-responses/assets/second-visualization.introduction.md",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/second-visualization.introduction.md",
             "response": []
         },
 
     "flooding-non-enhanced": {
             "type": "video",
-            "path": "emotional-vs-responses/assets/flooding-non-enhanced.mov",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/flooding-non-enhanced.mov",
             "forceCompletion": true,
             "response": []
         },
@@ -287,12 +282,12 @@
 
         "part-three": {
             "type": "markdown",
-            "path": "emotional-vs-responses/assets/part-three.md",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/part-three.md",
             "response": []
         },
         "final-comparison": {
             "type": "image",
-            "path": "emotional-vs-responses/assets/photo.png",
+            "path": "vacation_destinbeer_consumption_austriaation_austria/assets/photo.png",
             "style": {
                 "maxWidth": "700px",
                 "width": "100%"

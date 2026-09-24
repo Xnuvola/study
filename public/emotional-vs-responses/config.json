@@ -23,393 +23,829 @@
         "autoDownloadStudy": false,
         "withSidebar": false
     },
-    "components": {
-        "introduction": {
-            "type": "markdown",
-            "path": "emotional-vs-responses/assets/introduction.md",
-            "response": []
-        },
-        "demographics": {
-            "type": "questionnaire",
-            "response": [
-                {
-                    "id": "age",
-                    "prompt": "What is your age?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "longText",
-                    "placeholder": "Enter your age"
-                },
-                {
-                    "id": "gender",
-                    "prompt": "What is your gender?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "dropdown",
-                    "placeholder": "Please select your gender",
-                    "options": [
-                        "Female",
-                        "Male",
-                        "Other",
-                        "Prefer not to say"
-                    ]
-                },
-                    {
-                        "id": "education",
-                        "prompt": "What is your highest degree or level of education you have completed?",
-                        "required": true,
-                        "location": "aboveStimulus",
-                        "type": "dropdown",
-                        "placeholder": "Please select your highest level of education",
-                        "options": [
-                            "Less than high school degree",
-                            "High school degree or equivalent",
-                            "Professional/vocational degree",
-                            "Some college/university study without earning a bachelor's degree",
-                            "Bachelor's degree",
-                            "Master's degree",
-                            "Doctoral degree",
-                            "Other"
-                        ]
-                    },
-                    {
-                        "id": "austrian-state",
-                        "prompt": "In which Austrian federal state do you currently live?",
-                        "required": true,
-                        "location": "aboveStimulus",
-                        "type": "dropdown",
-                        "placeholder": "Please select your federal state",
-                        "options": [
-                            "Burgenland",
-                            "Carinthia",
-                            "Lower Austria",
-                            "Upper Austria",
-                            "Salzburg",
-                            "Styria",
-                            "Tyrol",
-                            "Vorarlberg",
-                            "Vienna"
-                        ]
-                    }
-            ]
-        },
-        "first-visualization-introduction": {
-            "type": "markdown",
-            "path": "emotional-vs-responses/assets/first-visualization.introduction.md",
-            "response": []
-        },
-        "flooding-enhanced": {
-            "type": "video",
-            "path": "emotional-vs-responses/assets/flooding-enhanced.mov",
-            "forceCompletion": false,
-            "withTimeline": true,
-            "response": []
-        },
-        "first-visualization": {
-            "type": "questionnaire",
-            "response": [
-                {
-                    "id": "visualization-statements",
-                    "prompt": "Look at the first visualization carefully. Answer the questions below.",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "matrix-radio",
-                    "answerOptions": [
-                        "Strongly disagree",
-                        "Disagree",
-                        "Slightly disagree",
-                        "Neutral",
-                        "Slightly agree",
-                        "Agree",
-                        "Strongly aagree"
-                    ],
+"components": {
+    "introduction": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/introduction.md",
+        "response": []
+    },
+
+    "language-selection": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "language",
+                "prompt": "Please select your preferred language. / Bitte wählen Sie Ihre bevorzugte Sprache.",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "radio",
+                "options": [
+                    "English",
+                    "Deutsch"
+                ]
+            }
+        ]
+    },
+
+    "demographics-en": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "age-en",
+                "prompt": "What is your age?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "longText",
+                "placeholder": "Enter your age"
+            },
+            {
+                "id": "gender-en",
+                "prompt": "What is your gender?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Please select your gender",
+                "options": [
+                    "Female",
+                    "Male",
+                    "Other",
+                    "Prefer not to say"
+                ]
+            },
+            {
+                "id": "education-en",
+                "prompt": "What is your highest degree or level of education you have completed?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Please select your highest level of education",
+                "options": [
+                    "Less than high school degree",
+                    "High school degree or equivalent",
+                    "Professional/vocational degree",
+                    "Some college/university study without earning a bachelor's degree",
+                    "Bachelor's degree",
+                    "Master's degree",
+                    "Doctoral degree",
+                    "Other"
+                ]
+            },
+            {
+                "id": "austrian-state-en",
+                "prompt": "In which Austrian federal state do you currently live?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Please select your federal state",
+                "options": [
+                    "Burgenland",
+                    "Carinthia",
+                    "Lower Austria",
+                    "Upper Austria",
+                    "Salzburg",
+                    "Styria",
+                    "Tyrol",
+                    "Vorarlberg",
+                    "Vienna"
+                ]
+            }
+        ]
+    },
+
+    "demographics-de": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "age-de",
+                "prompt": "Wie alt sind Sie?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "longText",
+                "placeholder": "Geben Sie Ihr Alter ein"
+            },
+            {
+                "id": "gender-de",
+                "prompt": "Welches Geschlecht haben Sie?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Bitte wählen Sie Ihr Geschlecht",
+                "options": [
+                    "Weiblich",
+                    "Männlich",
+                    "Andere",
+                    "Keine Angabe"
+                ]
+            },
+            {
+                "id": "education-de",
+                "prompt": "Welchen höchsten Bildungsabschluss haben Sie abgeschlossen?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Bitte wählen Sie Ihren höchsten Bildungsabschluss",
+                "options": [
+                    "Kein Pflichtschulabschluss",
+                    "Pflichtschule / Mittlere Schule",
+                    "Berufsausbildung / Lehre",
+                    "Studium ohne Bachelorabschluss",
+                    "Bachelorabschluss",
+                    "Masterabschluss",
+                    "Doktorat",
+                    "Andere"
+                ]
+            },
+            {
+                "id": "austrian-state-de",
+                "prompt": "In welchem österreichischen Bundesland leben Sie derzeit?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "dropdown",
+                "placeholder": "Bitte wählen Sie Ihr Bundesland",
+                "options": [
+                    "Burgenland",
+                    "Kärnten",
+                    "Niederösterreich",
+                    "Oberösterreich",
+                    "Salzburg",
+                    "Steiermark",
+                    "Tirol",
+                    "Vorarlberg",
+                    "Wien"
+                ]
+            }
+        ]
+    },
+
+    "first-visualization-introduction-en": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/first-visualization.introduction.md",
+        "response": []
+    },
+
+    "first-visualization-introduction-de": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/first-visualization.introduction-de.md",
+        "response": []
+    },
+
+    "flooding-enhanced": {
+        "type": "video",
+        "path": "emotional-vs-responses/assets/flooding-enhanced.mov",
+        "forceCompletion": false,
+        "withTimeline": true,
+        "response": []
+    },
+
+    "question_1-en": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
                 "questionOptions": [
-                "It is obvious for me how to read this visualization.",
-                "I can easily understand how the data is represented in this visualization.",
-                "I can easily understand this visualization.",
-                "I don't find this visualization crowded.",
-                "I don't find distracting parts in this visualization.",
-                "I can easily find specific elements in this visualization.",
-                "I can easily identify relevant information in this visualization.",
-                "I can easily retrieve information from this visualization.",
-                "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
-                "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
-            ]
-                },
-                {
-                    "id": "flooding-emotions",
-                    "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "checkbox",
-                    "options": [
-                        "Afraid",
-                        "Alert",
-                        "Upset",
-                        "Interested",
-                        "Distressed",
-                        "Scared",
-                        "Nervous"
-                    ]
-                },
-                {
-                    "id": "emotionally-affected",
-                    "prompt": "Were you emotionally affected by the visualization?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "radio",
-                    "options": [
-                        "Yes",
-                        "No"
-                    ]
-                },
-                {
-                    "id": "emotional-impact",
-                    "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "matrix-radio",
-                    "answerOptions": [
-                        "Very slightly or not at all",
-                        "A little",
-                        "Moderately",
-                        "Quite a bit",
-                        "Extremely"
-                    ],
-                    "questionOptions": [
-                        "I felt overwhelmed by the flooding.",
-                        "I felt anxious while watching the flooding progress.",
-                        "I felt inspired to learn more about flooding.",
-                        "I felt hopeful it would get better.",
-                        "I felt inspired to act."
-                    ]
-                }
-            ]
-        },
-        "second-visualization-introduction": {
-            "type": "markdown",
-            "path": "emotional-vs-responses/assets/second-visualization.introduction.md",
-            "response": []
-        },
+                    "It is obvious for me how to read this visualization.",
+                    "I can easily understand how the data is represented in this visualization.",
+                    "I can easily understand this visualization.",
+                    "I don't find this visualization crowded.",
+                    "I don't find distracting parts in this visualization.",
+                    "I can easily find specific elements in this visualization.",
+                    "I can easily identify relevant information in this visualization.",
+                    "I can easily retrieve information from this visualization.",
+                    "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
+                    "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
+                ]
+            }
+        ]
+    },
+
+    "question_1-de": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
+                    "Für mich ist offensichtlich, wie diese Visualisierung zu lesen ist.",
+                    "Ich kann leicht verstehen, wie die Daten in dieser Visualisierung dargestellt werden.",
+                    "Ich kann diese Visualisierung leicht verstehen.",
+                    "Ich finde diese Visualisierung nicht überladen.",
+                    "Ich finde keine ablenkenden Elemente in dieser Visualisierung.",
+                    "Ich kann bestimmte Elemente in dieser Visualisierung leicht finden.",
+                    "Ich kann relevante Informationen in dieser Visualisierung leicht erkennen.",
+                    "Ich kann Informationen aus dieser Visualisierung leicht abrufen.",
+                    "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung erkennen.",
+                    "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung deutlich erkennen."
+                ]
+            }
+        ]
+    },
+
+    "question_2-en": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "flooding-emotions-en",
+                "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "checkbox",
+                "options": [
+                    "Afraid",
+                    "Alert",
+                    "Upset",
+                    "Interested",
+                    "Distressed",
+                    "Scared",
+                    "Nervous"
+                ]
+            }
+        ]
+    },
+
+    "question_2-de": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "flooding-emotions-de",
+                "prompt": "Welche Emotionen verbinden Sie mit Überschwemmungen, nachdem Sie die Visualisierung betrachtet haben?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "checkbox",
+                "options": [
+                    "Ängstlich",
+                    "Alarmiert",
+                    "Aufgebracht",
+                    "Interessiert",
+                    "Bedrückt",
+                    "Verängstigt",
+                    "Nervös"
+                ]
+            }
+        ]
+    },
+
+    "question_3-en": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "emotionally-affected-en",
+                "prompt": "Were you emotionally affected by the visualization?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "radio",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            }
+        ]
+    },
+
+    "question_3-de": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "emotionally-affected-de",
+                "prompt": "Hat Sie die Visualisierung emotional beeinflusst?",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "radio",
+                "options": [
+                    "Ja",
+                    "Nein"
+                ]
+            }
+        ]
+    },
+
+    "question_4-en": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Very slightly or not at all",
+                    "A little",
+                    "Moderately",
+                    "Quite a bit",
+                    "Extremely"
+                ],
+                "questionOptions": [
+                    "I felt overwhelmed by the flooding.",
+                    "I felt anxious while watching the flooding progress.",
+                    "I felt inspired to learn more about flooding.",
+                    "I felt hopeful it would get better.",
+                    "I felt inspired to act."
+                ]
+            }
+        ]
+    },
+
+    "question_4-de": {
+        "type": "questionnaire",
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "aboveStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Überhaupt nicht oder nur sehr wenig",
+                    "Ein wenig",
+                    "Mäßig",
+                    "Ziemlich stark",
+                    "Extrem stark"
+                ],
+                "questionOptions": [
+                    "Ich fühlte mich von den Überschwemmungen überwältigt.",
+                    "Ich fühlte mich ängstlich, während ich den Verlauf der Überschwemmungen betrachtete.",
+                    "Ich fühlte mich motiviert, mehr über Überschwemmungen zu erfahren.",
+                    "Ich hoffte, dass es besser werden würde.",
+                    "Ich fühlte mich motiviert, etwas zu unternehmen."
+                ]
+            }
+        ]
+    },
+
+    "second-visualization-introduction-en": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/second-visualization.introduction.md",
+        "response": []
+    },
+
+    "second-visualization-introduction-de": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/second-visualization-introduction-de.md",
+        "response": []
+    },
 
     "flooding-non-enhanced": {
-            "type": "video",
-            "path": "emotional-vs-responses/assets/flooding-non-enhanced.mov",
-            "forceCompletion": false,
-            "withTimeline": true,
-            "response": []
-        },
+        "type": "video",
+        "path": "emotional-vs-responses/assets/flooding-non-enhanced.mov",
+        "forceCompletion": false,
+        "withTimeline": true,
+        "response": []
+    },
 
-        "second-visualization": {
-            "type": "questionnaire",
-            "response": [
+    "part-three-en": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/part-three.md",
+        "response": []
+    },
+
+    "part-three-de": {
+        "type": "markdown",
+        "path": "emotional-vs-responses/assets/part-three-de.md",
+        "response": []
+    },
+
+    "final-comparison_question_1-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "trustworthy-en",
+                "prompt": "Which visualization was more trustworthy?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_2-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "engaging-en",
+                "prompt": "Which visualization was more engaging for you?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_3-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "emotionally-compelling-en",
+                "prompt": "Which visualization was more emotionally compelling?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_4-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "confusing-en",
+                "prompt": "Which visualization was more confusing?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_5-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "enjoyable-en",
+                "prompt": "Which visualization was more enjoyable?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_6-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "easier-to-understand-en",
+                "prompt": "Which visualization was easier to understand?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_7-en": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "easier-to-read-en",
+                "prompt": "Which visualization is easier to read?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Enhanced visualization",
+                    "Non-enhanced visualization"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_1-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "trustworthy-de",
+                "prompt": "Welche Visualisierung war für Sie vertrauenswürdiger?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_2-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "engaging-de",
+                "prompt": "Welche Visualisierung war für Sie ansprechender?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_3-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "emotionally-compelling-de",
+                "prompt": "Welche Visualisierung war für Sie emotional überzeugender?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_4-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "confusing-de",
+                "prompt": "Welche Visualisierung war für Sie verwirrender?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_5-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "enjoyable-de",
+                "prompt": "Welche Visualisierung war für Sie angenehmer?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_6-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "easier-to-understand-de",
+                "prompt": "Welche Visualisierung war leichter zu verstehen?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    },
+
+    "final-comparison_question_7-de": {
+        "type": "image",
+        "path": "emotional-vs-responses/assets/photo.png",
+        "style": {
+            "maxWidth": "700px",
+            "width": "100%"
+        },
+        "response": [
+            {
+                "id": "easier-to-read-de",
+                "prompt": "Welche Visualisierung ist leichter zu lesen?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Erweiterte Visualisierung",
+                    "Nicht erweiterte Visualisierung"
+                ]
+            }
+        ]
+    }
+},
+
+"sequence": {
+    "order": "fixed",
+    "components": [
+        "introduction",
+        "language-selection",
+
+        {
+            "id": "english-study",
+            "order": "fixed",
+            "components": [
+                "demographics-en",
+
                 {
-                    "id": "visualization-statements",
-                    "prompt": "Look at the first visualization carefully. Answer the questions below.",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "matrix-radio",
-                    "answerOptions": [
-                        "Strongly disagree",
-                        "Disagree",
-                        "Slightly disagree",
-                        "Neutral",
-                        "Slightly agree",
-                        "Agree",
-                        "Strongly aagree"
-                    ],
-                "questionOptions": [
-                "It is obvious for me how to read this visualization.",
-                "I can easily understand how the data is represented in this visualization.",
-                "I can easily understand this visualization.",
-                "I don't find this visualization crowded.",
-                "I don't find distracting parts in this visualization.",
-                "I can easily find specific elements in this visualization.",
-                "I can easily identify relevant information in this visualization.",
-                "I can easily retrieve information from this visualization.",
-                "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
-                "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
-            ]
-                },
-                {
-                    "id": "flooding-emotions",
-                    "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "checkbox",
-                    "options": [
-                        "Afraid",
-                        "Alert",
-                        "Upset",
-                        "Interested",
-                        "Distressed",
-                        "Scared",
-                        "Nervous"
+                    "order": "latinSquare",
+                    "components": [
+                        {
+                            "order": "fixed",
+                            "components": [
+                                "first-visualization-introduction-en",
+                                "flooding-enhanced",
+                                "question_1-en",
+                                "question_2-en",
+                                "question_3-en",
+                                "question_4-en"
+                            ]
+                        },
+                        {
+                            "order": "fixed",
+                            "components": [
+                                "second-visualization-introduction-en",
+                                "flooding-non-enhanced",
+                                "question_1-en",
+                                "question_2-en",
+                                "question_3-en",
+                                "question_4-en"
+                            ]
+                        }
                     ]
                 },
+
+                "part-three-en",
+
                 {
-                    "id": "emotionally-affected",
-                    "prompt": "Were you emotionally affected by the visualization?",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "radio",
-                    "options": [
-                        "Yes",
-                        "No"
-                    ]
-                },
-                {
-                    "id": "emotional-impact",
-                    "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
-                    "required": true,
-                    "location": "aboveStimulus",
-                    "type": "matrix-radio",
-                    "answerOptions": [
-                        "Very slightly or not at all",
-                        "A little",
-                        "Moderately",
-                        "Quite a bit",
-                        "Extremely"
-                    ],
-                    "questionOptions": [
-                        "I felt overwhelmed by the flooding.",
-                        "I felt anxious while watching the flooding progress.",
-                        "I felt inspired to learn more about flooding.",
-                        "I felt hopeful it would get better.",
-                        "I felt inspired to act."
+                    "id":"part_three1-questions",
+                    "order": "fixed",
+                    "components": [
+                        "final-comparison_question_1-en",
+                        "final-comparison_question_2-en",
+                        "final-comparison_question_3-en",
+                        "final-comparison_question_4-en",
+                        "final-comparison_question_5-en",
+                        "final-comparison_question_6-en",
+                        "final-comparison_question_7-en"
                     ]
                 }
             ]
         },
 
-        "part-three": {
-            "type": "markdown",
-            "path": "emotional-vs-responses/assets/part-three.md",
-            "response": []
-        },
-        "final-comparison": {
-            "type": "image",
-            "path": "emotional-vs-responses/assets/photo.png",
-            "style": {
-                "maxWidth": "700px",
-                "width": "100%"
-            },
-            "response": [
+        {
+            "id": "german-study",
+            "order": "fixed",
+            "components": [
+                "demographics-de",
+
                 {
-                    "id": "trustworthy",
-                    "prompt": "Which visualization was more trustworthy?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
+                    "order": "latinSquare",
+                    "components": [
+                        {
+                            "order": "fixed",
+                            "components": [
+                                "first-visualization-introduction-de",
+                                "flooding-enhanced",
+                                "question_1-de",
+                                "question_2-de",
+                                "question_3-de",
+                                "question_4-de"
+                            ]
+                        },
+                        {
+                            "order": "fixed",
+                            "components": [
+                                "second-visualization-introduction-de",
+                                "flooding-non-enhanced",
+                                "question_1-de",
+                                "question_2-de",
+                                "question_3-de",
+                                "question_4-de"
+                            ]
+                        }
                     ]
                 },
+
+                "part-three-de",
+
                 {
-                    "id": "engaging",
-                    "prompt": "Which visualization was more engaging for you?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
-                    ]
-                },
-                {
-                    "id": "emotionally-compelling",
-                    "prompt": "Which visualization was more emotionally compelling?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
-                    ]
-                },
-                {
-                    "id": "confusing",
-                    "prompt": "Which visualization was more confusing?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
-                    ]
-                },
-                {
-                    "id": "enjoyable",
-                    "prompt": "Which visualization was more enjoyable?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
-                    ]
-                },
-                {
-                    "id": "easier-to-understand",
-                    "prompt": "Which visualization was easier to understand?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
-                    ]
-                },
-                {
-                    "id": "easier-to-read",
-                    "prompt": "Which visualization is easier to read?",
-                    "required": true,
-                    "location": "belowStimulus",
-                    "type": "radio",
-                    "options": [
-                        "First visualization",
-                        "Second visualization"
+                    "id":"part_three1-questions_de",
+                    "order": "fixed",
+                    "components": [
+                        "final-comparison_question_1-de",
+                        "final-comparison_question_2-de",
+                        "final-comparison_question_3-de",
+                        "final-comparison_question_4-de",
+                        "final-comparison_question_5-de",
+                        "final-comparison_question_6-de",
+                        "final-comparison_question_7-de"
                     ]
                 }
             ]
         }
-    },
-    "sequence": {
-        "order": "fixed",
-        "components": [
-            "introduction",
-            "demographics",
-
-            {
-            "order": "latinSquare",
-            "components": [
-                {
-                    "id": "First-Vis",
-                    "order": "fixed",
-                    "components": [
-                        "first-visualization-introduction",
-                        "flooding-enhanced",
-                        "first-visualization"
-                    ]
-                },
-                {
-                    "id": " Second-Vis",
-                    "order": "fixed",
-                    "components": [
-                        "second-visualization-introduction",
-                        "flooding-non-enhanced",
-                        "second-visualization"
-                    ]
-                }
-            ]
-        },
-            "part-three",
-            "final-comparison"
-
-        ]
-    }
-    
-
-    
-}
+    ]
+}}

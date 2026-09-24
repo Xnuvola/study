@@ -3,15 +3,24 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.4/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "emotional-vs-responses",
-    "emotional-vs-responses copy"
+    "beer_consumption_austria",
+    "vacation_destination_austria",
+    "vehicle_purchase_austria"
   ],
   "configs": {
     "emotional-vs-responses": {
     "path": "emotional-vs-responses/config.json"
     },
-    "emotional-vs-responses copy": {
-      "path": "emotional-vs-responses copy/config.json"
+    "beer_consumption_austria": {
+      "path": "beer_consumption_austria/config.json"
+      },
+      "vacation_destination_austria": {
+        "path": "vacation_destination_austria/config.json"
+      },
+        "vehicle_purchase_austria": {
+          "path": "vehicle_purchase_austria/config.json"
       }
+
       
 }
 }
