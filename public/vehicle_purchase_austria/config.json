@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Emotional Responses of Data Visualization",
+        "title": "Registration of new motor vehicles in Austria",
         "version": "pilot",
         "authors": [
             "The reVISit Team",

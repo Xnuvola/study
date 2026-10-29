@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Emotional Responses of Data Visualization",
+        "title": "Flooding Occurrences in Austria",
         "version": "pilot",
         "authors": [
             "The reVISit Team",
@@ -37,7 +37,7 @@
                 "id": "language",
                 "prompt": "Please select your preferred language. / Bitte wählen Sie Ihre bevorzugte Sprache.",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "radio",
                 "options": [
                     "English",
@@ -197,14 +197,20 @@
         "response": []
     },
 
-    "question_1-en": {
-        "type": "questionnaire",
+
+      "question_1.1-en": {
+            "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    }, 
         "response": [
             {
                 "id": "visualization-statements-en",
                 "prompt": "Look at the visualization carefully. Answer the questions below.",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
                     "Strongly disagree",
@@ -218,12 +224,99 @@
                 "questionOptions": [
                     "It is obvious for me how to read this visualization.",
                     "I can easily understand how the data is represented in this visualization.",
-                    "I can easily understand this visualization.",
+                    "I can easily understand this visualization."
+                ]
+            }
+        ]
+    },
+
+      "question_1.2-en": {
+            "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    }, 
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
                     "I don't find this visualization crowded.",
                     "I don't find distracting parts in this visualization.",
+                    "I don't find this visualization messy."
+                ]
+            }
+        ]
+    },
+
+        "question_1.3-en": {
+            "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    }, 
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
                     "I can easily find specific elements in this visualization.",
                     "I can easily identify relevant information in this visualization.",
-                    "I can easily retrieve information from this visualization.",
+                    "I can easily retrieve information from this visualization."
+                ]
+            }
+        ]
+    },
+
+    "question_1.4-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
                     "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
                     "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
                 ]
@@ -231,14 +324,18 @@
         ]
     },
 
-    "question_1-de": {
-        "type": "questionnaire",
-        "response": [
+    "question_1.1-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
             {
                 "id": "visualization-statements-de",
                 "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
                     "Stimme überhaupt nicht zu",
@@ -252,12 +349,97 @@
                 "questionOptions": [
                     "Für mich ist offensichtlich, wie diese Visualisierung zu lesen ist.",
                     "Ich kann leicht verstehen, wie die Daten in dieser Visualisierung dargestellt werden.",
-                    "Ich kann diese Visualisierung leicht verstehen.",
+                    "Ich kann diese Visualisierung leicht verstehen."
+                ]
+            }
+        ]
+    },
+
+    "question_1.2-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
                     "Ich finde diese Visualisierung nicht überladen.",
                     "Ich finde keine ablenkenden Elemente in dieser Visualisierung.",
+                    "Ich finde diese Visualisierung nicht unübersichtlich."
+                ]
+            }
+        ]
+    },
+
+    "question_1.3-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
                     "Ich kann bestimmte Elemente in dieser Visualisierung leicht finden.",
                     "Ich kann relevante Informationen in dieser Visualisierung leicht erkennen.",
-                    "Ich kann Informationen aus dieser Visualisierung leicht abrufen.",
+                    "Ich kann Informationen aus dieser Visualisierung leicht abrufen."
+                ]
+            }
+        ]
+    },
+
+    "question_1.4-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
                     "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung erkennen.",
                     "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung deutlich erkennen."
                 ]
@@ -266,13 +448,17 @@
     },
 
     "question_2-en": {
-        "type": "questionnaire",
-        "response": [
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },        "response": [
             {
                 "id": "flooding-emotions-en",
                 "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "checkbox",
                 "options": [
                     "Afraid",
@@ -288,13 +474,18 @@
     },
 
     "question_2-de": {
-        "type": "questionnaire",
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "flooding-emotions-de",
                 "prompt": "Welche Emotionen verbinden Sie mit Überschwemmungen, nachdem Sie die Visualisierung betrachtet haben?",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "checkbox",
                 "options": [
                     "Ängstlich",
@@ -310,13 +501,18 @@
     },
 
     "question_3-en": {
-        "type": "questionnaire",
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotionally-affected-en",
                 "prompt": "Were you emotionally affected by the visualization?",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "radio",
                 "options": [
                     "Yes",
@@ -327,13 +523,18 @@
     },
 
     "question_3-de": {
-        "type": "questionnaire",
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotionally-affected-de",
                 "prompt": "Hat Sie die Visualisierung emotional beeinflusst?",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "radio",
                 "options": [
                     "Ja",
@@ -344,13 +545,18 @@
     },
 
     "question_4-en": {
-        "type": "questionnaire",
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotional-impact-en",
                 "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
                     "Very slightly or not at all",
@@ -371,13 +577,18 @@
     },
 
     "question_4-de": {
-        "type": "questionnaire",
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotional-impact-de",
                 "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
                 "required": true,
-                "location": "aboveStimulus",
+                "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
                     "Überhaupt nicht oder nur sehr wenig",
@@ -430,12 +641,12 @@
     },
 
     "final-comparison_question_1-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "trustworthy-en",
@@ -444,20 +655,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_2-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "engaging-en",
@@ -466,20 +677,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_3-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotionally-compelling-en",
@@ -488,20 +699,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_4-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "confusing-en",
@@ -510,20 +721,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_5-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "enjoyable-en",
@@ -532,20 +743,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_6-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "easier-to-understand-en",
@@ -554,20 +765,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_7-en": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "easier-to-read-en",
@@ -576,20 +787,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Enhanced visualization",
-                    "Non-enhanced visualization"
+                    "Visualization A",
+                    "Visualization B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_1-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "trustworthy-de",
@@ -598,20 +809,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_2-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "engaging-de",
@@ -620,20 +831,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_3-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "emotionally-compelling-de",
@@ -642,20 +853,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_4-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "confusing-de",
@@ -664,20 +875,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_5-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "enjoyable-de",
@@ -686,20 +897,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_6-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "easier-to-understand-de",
@@ -708,20 +919,20 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
     },
 
     "final-comparison_question_7-de": {
-        "type": "image",
-        "path": "emotional-vs-responses/assets/photo.png",
-        "style": {
-            "maxWidth": "700px",
-            "width": "100%"
-        },
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
         "response": [
             {
                 "id": "easier-to-read-de",
@@ -730,8 +941,8 @@
                 "location": "belowStimulus",
                 "type": "radio",
                 "options": [
-                    "Erweiterte Visualisierung",
-                    "Nicht erweiterte Visualisierung"
+                    "Visualisierung A",
+                    "Visualisierung B"
                 ]
             }
         ]
@@ -742,14 +953,28 @@
     "order": "fixed",
     "components": [
         "introduction",
-        "language-selection",
+
+        {
+            "id": "language-block",
+            "order": "fixed",
+            "components": ["language-selection"],
+            "skip": [
+                {
+                    "name": "language-selection",
+                    "check": "response",
+                    "responseId": "language",
+                    "value": "Deutsch",
+                    "comparison": "equal",
+                    "to": "german-study"
+                }
+            ]
+        },
 
         {
             "id": "english-study",
             "order": "fixed",
             "components": [
                 "demographics-en",
-
                 {
                     "order": "latinSquare",
                     "components": [
@@ -758,7 +983,10 @@
                             "components": [
                                 "first-visualization-introduction-en",
                                 "flooding-enhanced",
-                                "question_1-en",
+                                "question_1.1-en", 
+                                "question_1.2-en",
+                                "question_1.3-en",
+                                "question_1.4-en",
                                 "question_2-en",
                                 "question_3-en",
                                 "question_4-en"
@@ -769,7 +997,10 @@
                             "components": [
                                 "second-visualization-introduction-en",
                                 "flooding-non-enhanced",
-                                "question_1-en",
+                                "question_1.1-en",
+                                "question_1.2-en",
+                                "question_1.3-en",
+                                "question_1.4-en",
                                 "question_2-en",
                                 "question_3-en",
                                 "question_4-en"
@@ -777,11 +1008,9 @@
                         }
                     ]
                 },
-
                 "part-three-en",
-
                 {
-                    "id":"part_three1-questions",
+                    "id": "part_three1-questions",
                     "order": "fixed",
                     "components": [
                         "final-comparison_question_1-en",
@@ -791,6 +1020,14 @@
                         "final-comparison_question_5-en",
                         "final-comparison_question_6-en",
                         "final-comparison_question_7-en"
+                    ],
+                    "skip": [
+                        {
+                            "check": "block",
+                            "condition": "numCorrect",
+                            "value": 7,
+                            "to": "end"
+                        }
                     ]
                 }
             ]
@@ -801,7 +1038,6 @@
             "order": "fixed",
             "components": [
                 "demographics-de",
-
                 {
                     "order": "latinSquare",
                     "components": [
@@ -810,7 +1046,10 @@
                             "components": [
                                 "first-visualization-introduction-de",
                                 "flooding-enhanced",
-                                "question_1-de",
+                                "question_1.1-de",
+                                "question_1.2-de",
+                                "question_1.3-de",
+                                "question_1.4-de",                    
                                 "question_2-de",
                                 "question_3-de",
                                 "question_4-de"
@@ -821,7 +1060,10 @@
                             "components": [
                                 "second-visualization-introduction-de",
                                 "flooding-non-enhanced",
-                                "question_1-de",
+                                "question_1.1-de",
+                                "question_1.2-de",
+                                "question_1.3-de",
+                                "question_1.4-de",
                                 "question_2-de",
                                 "question_3-de",
                                 "question_4-de"
@@ -829,11 +1071,9 @@
                         }
                     ]
                 },
-
                 "part-three-de",
-
                 {
-                    "id":"part_three1-questions_de",
+                    "id": "part_three1-questions_de",
                     "order": "fixed",
                     "components": [
                         "final-comparison_question_1-de",
@@ -848,4 +1088,5 @@
             ]
         }
     ]
-}}
+        }    
+}
