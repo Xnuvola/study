@@ -222,7 +222,7 @@
             "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -254,7 +254,7 @@
             "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -286,7 +286,7 @@
             "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -318,7 +318,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -474,7 +474,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -505,7 +505,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -536,7 +536,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -567,7 +567,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -722,7 +722,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -766,7 +766,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -810,7 +810,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -840,7 +840,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -871,7 +871,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -901,7 +901,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -931,7 +931,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -961,7 +961,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -992,7 +992,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1232,7 +1232,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1262,7 +1262,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1292,7 +1292,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1322,7 +1322,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1352,7 +1352,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1382,7 +1382,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1412,7 +1412,7 @@
     "type": "react-component",
     "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "imagePath": "/emotional-vs-responses/assets/Beer_img_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
