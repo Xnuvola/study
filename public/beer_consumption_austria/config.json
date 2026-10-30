@@ -24,11 +24,31 @@
         "withSidebar": true
     },
 "components": {
+
+
+"Consent_Question_en_de": {
+    "type": "questionnaire",
+    "response": [
+        {
+            "id": "consent",
+            "prompt": "ENGLISH:\nI have read and understood the information provided about this study. I understand that my participation is voluntary, that I may withdraw at any time without giving a reason, and that my responses will be collected and used for academic research purposes in accordance with the information provided.\n\nDEUTSCH:\nIch habe die bereitgestellten Informationen zu dieser Studie gelesen und verstanden. Mir ist bewusst, dass meine Teilnahme freiwillig ist, dass ich jederzeit und ohne Angabe von Gründen abbrechen kann und dass meine Antworten gemäß den bereitgestellten Informationen zu wissenschaftlichen Forschungszwecken erhoben und verwendet werden.\n\nDo you agree to participate in this study? / Stimmen Sie der Teilnahme an dieser Studie zu?",
+            "required": true,
+            "location": "belowStimulus",
+            "type": "radio",
+            "options": [
+                "Yes, I agree to participate. / Ja, ich stimme der Teilnahme zu.",
+                "No, I do not agree to participate. / Nein, ich stimme der Teilnahme nicht zu."
+            ]
+        }
+    ]
+},
+
     "introduction": {
         "type": "markdown",
         "path": "emotional-vs-responses/assets/introduction.md",
         "response": []
     },
+
 
     "language-selection": {
         "type": "questionnaire",
@@ -198,11 +218,11 @@
     },
 
 
-      "question_1.1-en": {
+      "question_1.1-en_A": {
             "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -230,11 +250,11 @@
         ]
     },
 
-      "question_1.2-en": {
+      "question_1.2-en_A": {
             "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -262,11 +282,11 @@
         ]
     },
 
-        "question_1.3-en": {
+        "question_1.3-en_A": {
             "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     }, 
         "response": [
@@ -294,11 +314,11 @@
         ]
     },
 
-    "question_1.4-en": {
+    "question_1.4-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -324,11 +344,137 @@
         ]
     },
 
-    "question_1.1-de": {
-    "type": "react-component",
-    "path": "ZoomableImage.tsx",
+          "question_1.1-en_B": {
+            "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    }, 
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
+                    "It is obvious for me how to read this visualization.",
+                    "I can easily understand how the data is represented in this visualization.",
+                    "I can easily understand this visualization."
+                ]
+            }
+        ]
+    },
+
+      "question_1.2-en_B": {
+            "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    }, 
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
+                    "I don't find this visualization crowded.",
+                    "I don't find distracting parts in this visualization.",
+                    "I don't find this visualization messy."
+                ]
+            }
+        ]
+    },
+
+        "question_1.3-en_B": {
+            "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    }, 
+        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
+                    "I can easily find specific elements in this visualization.",
+                    "I can easily identify relevant information in this visualization.",
+                    "I can easily retrieve information from this visualization."
+                ]
+            }
+        ]
+    },
+
+    "question_1.4-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-en",
+                "prompt": "Look at the visualization carefully. Answer the questions below.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Strongly disagree",
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree",
+                    "Strongly agree"
+                ],
+                "questionOptions": [
+                    "I find data features (for example, a minimum, an outlier, or a trend) visible in this visualization.",
+                    "I can clearly see data features (for example, a minimum, an outlier, or a trend) in this visualization."
+                ]
+            }
+        ]
+    },
+
+    "question_1.1-de_A": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -355,11 +501,11 @@
         ]
     },
 
-    "question_1.2-de": {
+    "question_1.2-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -386,11 +532,11 @@
         ]
     },
 
-    "question_1.3-de": {
+    "question_1.3-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -417,11 +563,11 @@
         ]
     },
 
-    "question_1.4-de": {
+    "question_1.4-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },        "response": [
             {
@@ -448,14 +594,135 @@
     },
 
 
-
-
-
-    "question_3-en": {
+    "question_1.1-de_B": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
+                    "Für mich ist offensichtlich, wie diese Visualisierung zu lesen ist.",
+                    "Ich kann leicht verstehen, wie die Daten in dieser Visualisierung dargestellt werden.",
+                    "Ich kann diese Visualisierung leicht verstehen."
+                ]
+            }
+        ]
+    },
+
+    "question_1.2-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
+                    "Ich finde diese Visualisierung nicht überladen.",
+                    "Ich finde keine ablenkenden Elemente in dieser Visualisierung.",
+                    "Ich finde diese Visualisierung nicht unübersichtlich."
+                ]
+            }
+        ]
+    },
+
+    "question_1.3-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
+                    "Ich kann bestimmte Elemente in dieser Visualisierung leicht finden.",
+                    "Ich kann relevante Informationen in dieser Visualisierung leicht erkennen.",
+                    "Ich kann Informationen aus dieser Visualisierung leicht abrufen."
+                ]
+            }
+        ]
+    },
+
+    "question_1.4-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },        "response": [
+            {
+                "id": "visualization-statements-de",
+                "prompt": "Betrachten Sie die Visualisierung aufmerksam. Beantworten Sie anschließend die folgenden Fragen.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme überhaupt nicht zu",
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu",
+                    "Stimme voll und ganz zu"
+                ],
+                "questionOptions": [
+                    "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung erkennen.",
+                    "Ich kann Datenmerkmale (z. B. ein Minimum, einen Ausreißer oder einen Trend) in dieser Visualisierung deutlich erkennen."
+                ]
+            }
+        ]
+    },
+
+
+    "question_3-en_A": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -473,11 +740,33 @@
         ]
     },
 
-    "question_3-de": {
+        "question_3-en_B": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotionally-affected-en",
+                "prompt": "Were you emotionally affected by the visualization?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            }
+        ]
+    },
+
+    "question_3-de_A": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -495,11 +784,33 @@
         ]
     },
 
-    "question_4.1-en": {
+        "question_3-de_B": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotionally-affected-de",
+                "prompt": "Hat Sie die Visualisierung emotional beeinflusst?",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "radio",
+                "options": [
+                    "Ja",
+                    "Nein"
+                ]
+            }
+        ]
+    },
+
+    "question_4.1-en_A": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -525,11 +836,11 @@
         ]
     },
 
-        "question_4.2-en": {
+        "question_4.2-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -556,11 +867,11 @@
     },
 
     
-        "question_4.3-en": {
+        "question_4.3-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -586,11 +897,11 @@
         ]
     },
 
-    "question_4.4-en": {
+    "question_4.4-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -616,11 +927,11 @@
         ]
     },
 
-        "question_4.5-en": {
+        "question_4.5-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -646,11 +957,11 @@
         ]
     },
 
-            "question_4.6-en": {
+            "question_4.6-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -677,11 +988,11 @@
     },
 
 
-                "question_4.7-en": {
+                "question_4.7-en_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -706,11 +1017,222 @@
         ]
     },
 
-    "question_4.1-de": {
+        "question_4.1-en_B": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Interested.",
+                    "I felt Distressed.",
+                    "I felt Excited."
+                ]
+            }
+        ]
+    },
+
+        "question_4.2-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Upset.",
+                    "I felt Strong.",
+                    "I felt Guilty."
+                ]
+            }
+        ]
+    },
+
+    
+        "question_4.3-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Scared.",
+                    "I felt Hostile.",
+                    "I felt Enthusiastic."
+                ]
+            }
+        ]
+    },
+
+    "question_4.4-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Proud.",
+                    "I felt Irritable.",
+                    "I felt Alert."
+                ]
+            }
+        ]
+    },
+
+        "question_4.5-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Ashamed.",
+                    "I felt Inspired.",
+                    "I felt Nervous."
+                ]
+            }
+        ]
+    },
+
+            "question_4.6-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Determined.",
+                    "I felt Attentive.",
+                    "I felt Jittery."
+                ]
+            }
+        ]
+    },
+
+
+                "question_4.7-en_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_en.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Active.",
+                    "I felt Afraid."
+                ]
+            }
+        ]
+    },
+
+    "question_4.1-de_A": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -736,11 +1258,11 @@
         ]
     },
 
-        "question_4.2-de": {
+        "question_4.2-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -766,11 +1288,11 @@
         ]
     },
 
-        "question_4.3-de": {
+        "question_4.3-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -796,11 +1318,11 @@
         ]
     },
 
-        "question_4.4-de": {
+        "question_4.4-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -826,11 +1348,11 @@
         ]
     },
 
-        "question_4.5-de": {
+        "question_4.5-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -856,11 +1378,11 @@
         ]
     },
 
-        "question_4.6-de": {
+        "question_4.6-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -886,11 +1408,220 @@
         ]
     },
 
-        "question_4.7-de": {
+        "question_4.7-de_A": {
     "type": "react-component",
-    "path": "ZoomableImage.tsx",
+    "path": "ZoomableSingleImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Visualization_A_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Aktiv.",
+                    "Ich fühlte Ängstlich."
+                ]
+            }
+        ]
+    },
+
+        "question_4.1-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Interessiert.",
+                    "Ich fühlte Beunruhigt.",
+                    "Ich fühlte Aufgeregt."
+                ]
+            }
+        ]
+    },
+
+        "question_4.2-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Verärgert.",
+                    "Ich fühlte Stark.",
+                    "Ich fühlte Schuldig."
+                ]
+            }
+        ]
+    },
+
+        "question_4.3-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Ängstlich.",
+                    "Ich fühlte Feindselig.",
+                    "Ich fühlte Begeistert."
+                ]
+            }
+        ]
+    },
+
+        "question_4.4-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Stolz.",
+                    "Ich fühlte Gereizt.",
+                    "Ich fühlte Aufmerksam."
+                ]
+            }
+        ]
+    },
+
+        "question_4.5-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Beschämt.",
+                    "Ich fühlte Inspiriert.",
+                    "Ich fühlte Nervös."
+                ]
+            }
+        ]
+    },
+
+        "question_4.6-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Entschlossen.",
+                    "Ich fühlte Aufmerksam.",
+                    "Ich fühlte Nervös."
+                ]
+            }
+        ]
+    },
+
+        "question_4.7-de_B": {
+    "type": "react-component",
+    "path": "ZoomableSingleImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/Visualization_B_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -951,7 +1682,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -973,7 +1704,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -995,7 +1726,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1017,7 +1748,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1039,7 +1770,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1061,7 +1792,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1083,7 +1814,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_en.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1105,7 +1836,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1127,7 +1858,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1149,7 +1880,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1171,7 +1902,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1193,7 +1924,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1215,7 +1946,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1237,7 +1968,7 @@
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "imagePath": "/emotional-vs-responses/assets/Question_4_img_de.png",
         "alt": "Flooding visualization"
     },
         "response": [
@@ -1259,12 +1990,14 @@
 "sequence": {
     "order": "fixed",
     "components": [
+        "Consent_Question_en_de",
         "introduction",
 
         {
             "id": "language-block",
             "order": "fixed",
-            "components": ["language-selection"],
+            "components": 
+            ["language-selection"],
             "skip": [
                 {
                     "name": "language-selection",
@@ -1290,18 +2023,18 @@
                             "components": [
                                 "first-visualization-introduction-en",
                                 "flooding-enhanced",
-                                "question_1.1-en", 
-                                "question_1.2-en",
-                                "question_1.3-en",
-                                "question_1.4-en",
-                                "question_3-en",
-                                "question_4.1-en",
-                                "question_4.2-en",
-                                "question_4.3-en",
-                                "question_4.4-en",
-                                "question_4.5-en",
-                                "question_4.6-en",
-                                "question_4.7-en"
+                                "question_1.1-en_A", 
+                                "question_1.2-en_A",
+                                "question_1.3-en_A",
+                                "question_1.4-en_A",
+                                "question_3-en_A",
+                                "question_4.1-en_A",
+                                "question_4.2-en_A",
+                                "question_4.3-en_A",
+                                "question_4.4-en_A",
+                                "question_4.5-en_A",
+                                "question_4.6-en_A",
+                                "question_4.7-en_A"
                             ]
                         },
                         {
@@ -1309,18 +2042,18 @@
                             "components": [
                                 "second-visualization-introduction-en",
                                 "flooding-non-enhanced",
-                                "question_1.1-en",
-                                "question_1.2-en",
-                                "question_1.3-en",
-                                "question_1.4-en",
-                                "question_3-en",
-                                "question_4.1-en",
-                                "question_4.2-en",
-                                "question_4.3-en",
-                                "question_4.4-en",
-                                "question_4.5-en",
-                                "question_4.6-en",
-                                "question_4.7-en"
+                                "question_1.1-en_B",
+                                "question_1.2-en_B",
+                                "question_1.3-en_B",
+                                "question_1.4-en_B",
+                                "question_3-en_B",
+                                "question_4.1-en_B",
+                                "question_4.2-en_B",
+                                "question_4.3-en_B",
+                                "question_4.4-en_B",
+                                "question_4.5-en_B",
+                                "question_4.6-en_B",
+                                "question_4.7-en_B"
                             ]
                         }
                     ]
@@ -1363,18 +2096,18 @@
                             "components": [
                                 "first-visualization-introduction-de",
                                 "flooding-enhanced",
-                                "question_1.1-de",
-                                "question_1.2-de",
-                                "question_1.3-de",
-                                "question_1.4-de",                    
-                                "question_3-de",
-                                "question_4.1-de",
-                                "question_4.2-de",
-                                "question_4.3-de",
-                                "question_4.4-de",
-                                "question_4.5-de",
-                                "question_4.6-de",
-                                "question_4.7-de"
+                                "question_1.1-de_A",
+                                "question_1.2-de_A",
+                                "question_1.3-de_A",
+                                "question_1.4-de_A",                    
+                                "question_3-de_A",
+                                "question_4.1-de_A",
+                                "question_4.2-de_A",
+                                "question_4.3-de_A",
+                                "question_4.4-de_A",
+                                "question_4.5-de_A",
+                                "question_4.6-de_A",
+                                "question_4.7-de_A"
                                 
                             ]
                         },
@@ -1383,18 +2116,18 @@
                             "components": [
                                 "second-visualization-introduction-de",
                                 "flooding-non-enhanced",
-                                "question_1.1-de",
-                                "question_1.2-de",
-                                "question_1.3-de",
-                                "question_1.4-de",
-                                "question_3-de",
-                                "question_4.1-de",
-                                "question_4.2-de",
-                                "question_4.3-de",
-                                "question_4.4-de",
-                                "question_4.5-de",
-                                "question_4.6-de",
-                                "question_4.7-de"
+                                "question_1.1-de_B",
+                                "question_1.2-de_B",
+                                "question_1.3-de_B",
+                                "question_1.4-de_B",
+                                "question_3-de_B",
+                                "question_4.1-de_B",
+                                "question_4.2-de_B",
+                                "question_4.3-de_B",
+                                "question_4.4-de_B",
+                                "question_4.5-de_B",
+                                "question_4.6-de_B",
+                                "question_4.7-de_B"
                             ]
                         }
                     ]
