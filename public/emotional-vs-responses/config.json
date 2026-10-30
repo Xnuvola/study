@@ -447,58 +447,9 @@
         ]
     },
 
-    "question_2-en": {
-    "type": "react-component",
-    "path": "ZoomableImage.tsx",
-    "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
-        "alt": "Flooding visualization"
-    },        "response": [
-            {
-                "id": "flooding-emotions-en",
-                "prompt": "What emotions do you associate with flooding now after you have viewed the visualization?",
-                "required": true,
-                "location": "belowStimulus",
-                "type": "checkbox",
-                "options": [
-                    "Afraid",
-                    "Alert",
-                    "Upset",
-                    "Interested",
-                    "Distressed",
-                    "Scared",
-                    "Nervous"
-                ]
-            }
-        ]
-    },
 
-    "question_2-de": {
-    "type": "react-component",
-    "path": "ZoomableImage.tsx",
-    "parameters": {
-        "imagePath": "/emotional-vs-responses/assets/photo.png",
-        "alt": "Flooding visualization"
-    },
-        "response": [
-            {
-                "id": "flooding-emotions-de",
-                "prompt": "Welche Emotionen verbinden Sie mit Überschwemmungen, nachdem Sie die Visualisierung betrachtet haben?",
-                "required": true,
-                "location": "belowStimulus",
-                "type": "checkbox",
-                "options": [
-                    "Ängstlich",
-                    "Alarmiert",
-                    "Aufgebracht",
-                    "Interessiert",
-                    "Bedrückt",
-                    "Verängstigt",
-                    "Nervös"
-                ]
-            }
-        ]
-    },
+
+
 
     "question_3-en": {
     "type": "react-component",
@@ -544,7 +495,7 @@
         ]
     },
 
-    "question_4-en": {
+    "question_4.1-en": {
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
@@ -559,24 +510,203 @@
                 "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
-                    "Very slightly or not at all",
-                    "A little",
-                    "Moderately",
-                    "Quite a bit",
-                    "Extremely"
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
                 ],
                 "questionOptions": [
-                    "I felt overwhelmed by the flooding.",
-                    "I felt anxious while watching the flooding progress.",
-                    "I felt inspired to learn more about flooding.",
-                    "I felt hopeful it would get better.",
-                    "I felt inspired to act."
+                    "I felt Interested.",
+                    "I felt Distressed.",
+                    "I felt Excited."
                 ]
             }
         ]
     },
 
-    "question_4-de": {
+        "question_4.2-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Upset.",
+                    "I felt Strong.",
+                    "I felt Guilty."
+                ]
+            }
+        ]
+    },
+
+    
+        "question_4.3-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Scared.",
+                    "I felt Hostile.",
+                    "I felt Enthusiastic."
+                ]
+            }
+        ]
+    },
+
+    "question_4.4-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Proud.",
+                    "I felt Irritable.",
+                    "I felt Alert."
+                ]
+            }
+        ]
+    },
+
+        "question_4.5-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Ashamed.",
+                    "I felt Inspired.",
+                    "I felt Nervous."
+                ]
+            }
+        ]
+    },
+
+            "question_4.6-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Determined.",
+                    "I felt Attentive.",
+                    "I felt Jittery."
+                ]
+            }
+        ]
+    },
+
+
+                "question_4.7-en": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-en",
+                "prompt": "Indicate the extent to which you felt these emotions while viewing the visualization.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Disagree",
+                    "Slightly disagree",
+                    "Neutral",
+                    "Slightly agree",
+                    "Agree"
+                ],
+                "questionOptions": [
+                    "I felt Active.",
+                    "I felt Afraid."
+                ]
+            }
+        ]
+    },
+
+    "question_4.1-de": {
     "type": "react-component",
     "path": "ZoomableImage.tsx",
     "parameters": {
@@ -591,18 +721,195 @@
                 "location": "belowStimulus",
                 "type": "matrix-radio",
                 "answerOptions": [
-                    "Überhaupt nicht oder nur sehr wenig",
-                    "Ein wenig",
-                    "Mäßig",
-                    "Ziemlich stark",
-                    "Extrem stark"
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
                 ],
                 "questionOptions": [
-                    "Ich fühlte mich von den Überschwemmungen überwältigt.",
-                    "Ich fühlte mich ängstlich, während ich den Verlauf der Überschwemmungen betrachtete.",
-                    "Ich fühlte mich motiviert, mehr über Überschwemmungen zu erfahren.",
-                    "Ich hoffte, dass es besser werden würde.",
-                    "Ich fühlte mich motiviert, etwas zu unternehmen."
+                    "Ich fühlte Interessiert.",
+                    "Ich fühlte Beunruhigt.",
+                    "Ich fühlte Aufgeregt."
+                ]
+            }
+        ]
+    },
+
+        "question_4.2-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Verärgert.",
+                    "Ich fühlte Stark.",
+                    "Ich fühlte Schuldig."
+                ]
+            }
+        ]
+    },
+
+        "question_4.3-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Ängstlich.",
+                    "Ich fühlte Feindselig.",
+                    "Ich fühlte Begeistert."
+                ]
+            }
+        ]
+    },
+
+        "question_4.4-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Stolz.",
+                    "Ich fühlte Gereizt.",
+                    "Ich fühlte Aufmerksam."
+                ]
+            }
+        ]
+    },
+
+        "question_4.5-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Beschämt.",
+                    "Ich fühlte Inspiriert.",
+                    "Ich fühlte Nervös."
+                ]
+            }
+        ]
+    },
+
+        "question_4.6-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Entschlossen.",
+                    "Ich fühlte Aufmerksam.",
+                    "Ich fühlte Nervös."
+                ]
+            }
+        ]
+    },
+
+        "question_4.7-de": {
+    "type": "react-component",
+    "path": "ZoomableImage.tsx",
+    "parameters": {
+        "imagePath": "/emotional-vs-responses/assets/photo.png",
+        "alt": "Flooding visualization"
+    },
+        "response": [
+            {
+                "id": "emotional-impact-de",
+                "prompt": "Geben Sie an, in welchem Ausmaß Sie diese Emotionen während der Betrachtung der Visualisierung empfunden haben.",
+                "required": true,
+                "location": "belowStimulus",
+                "type": "matrix-radio",
+                "answerOptions": [
+                    "Stimme nicht zu",
+                    "Stimme eher nicht zu",
+                    "Neutral",
+                    "Stimme eher zu",
+                    "Stimme zu"
+                ],
+                "questionOptions": [
+                    "Ich fühlte Aktiv.",
+                    "Ich fühlte Ängstlich."
                 ]
             }
         ]
@@ -987,9 +1294,14 @@
                                 "question_1.2-en",
                                 "question_1.3-en",
                                 "question_1.4-en",
-                                "question_2-en",
                                 "question_3-en",
-                                "question_4-en"
+                                "question_4.1-en",
+                                "question_4.2-en",
+                                "question_4.3-en",
+                                "question_4.4-en",
+                                "question_4.5-en",
+                                "question_4.6-en",
+                                "question_4.7-en"
                             ]
                         },
                         {
@@ -1001,9 +1313,14 @@
                                 "question_1.2-en",
                                 "question_1.3-en",
                                 "question_1.4-en",
-                                "question_2-en",
                                 "question_3-en",
-                                "question_4-en"
+                                "question_4.1-en",
+                                "question_4.2-en",
+                                "question_4.3-en",
+                                "question_4.4-en",
+                                "question_4.5-en",
+                                "question_4.6-en",
+                                "question_4.7-en"
                             ]
                         }
                     ]
@@ -1050,9 +1367,15 @@
                                 "question_1.2-de",
                                 "question_1.3-de",
                                 "question_1.4-de",                    
-                                "question_2-de",
                                 "question_3-de",
-                                "question_4-de"
+                                "question_4.1-de",
+                                "question_4.2-de",
+                                "question_4.3-de",
+                                "question_4.4-de",
+                                "question_4.5-de",
+                                "question_4.6-de",
+                                "question_4.7-de"
+                                
                             ]
                         },
                         {
@@ -1064,9 +1387,14 @@
                                 "question_1.2-de",
                                 "question_1.3-de",
                                 "question_1.4-de",
-                                "question_2-de",
                                 "question_3-de",
-                                "question_4-de"
+                                "question_4.1-de",
+                                "question_4.2-de",
+                                "question_4.3-de",
+                                "question_4.4-de",
+                                "question_4.5-de",
+                                "question_4.6-de",
+                                "question_4.7-de"
                             ]
                         }
                     ]
